@@ -208,7 +208,7 @@
         <div class="api-box">
             <span class="close-x" onclick="this.parentElement.style.display='none'">X</span>
             <strong>🔑 Gemini API Key 입력</strong><br>
-            <small style="color: #555;">※ 브라우저를 닫기 전까지 키가 임시 저장됩니다.</small>
+            <small style="color: #555;">⚠️ 키는 이 브라우저에만 저장됩니다.</small>
             <input type="password" id="apiKey" oninput="saveKey()" placeholder="여기에 API 키를 입력하세요">
         </div>
 
@@ -234,25 +234,25 @@
                 <label>캐릭터 이름</label>
                 <input type="text" id="s_name" class="req" oninput="checkForm()" placeholder="이름을 입력하세요">
                 <label>캐릭터 서사</label>
-                <textarea id="s_story" class="req" oninput="checkForm()" placeholder="캐릭터의 핵심 서사를 입력하세요..."></textarea>
+                <textarea id="s_story" class="req" oninput="checkForm()" placeholder="캐릭터의 핵심 서사를 입력하세요... 성격, 배경, 갈등, 변화 등 곡 추천에 영향을 줄 만한 모든 것."></textarea>
             </div>
             <div id="cpInputs" style="display:none;">
                 <label>캐릭터 A 이름</label>
                 <input type="text" id="c_nameA" class="req-cp" oninput="checkForm()">
                 <label>캐릭터 A 서사 (선택)</label>
-                <textarea id="c_storyA" placeholder="A의 핵심 서사"></textarea>
+                <textarea id="c_storyA" placeholder="캐릭터의 핵심 서사를 입력하세요... 성격, 배경, 갈등, 변화 등 곡 추천에 영향을 줄 만한 모든 것."></textarea>
                 <label>캐릭터 B 이름</label>
                 <input type="text" id="c_nameB" class="req-cp" oninput="checkForm()">
                 <label>캐릭터 B 서사 (선택)</label>
-                <textarea id="c_storyB" placeholder="B의 핵심 서사"></textarea>
+                <textarea id="c_storyB" placeholder="캐릭터 B의 개별 서사"></textarea>
                 <label style="color: var(--accent-purple);">★ CP 자체의 서사 (관계성)</label>
-                <textarea id="c_storyRel" class="req-cp" oninput="checkForm()" placeholder="두 사람 사이의 관계성..."></textarea>
+                <textarea id="c_storyRel" class="req-cp" oninput="checkForm()" placeholder="두 사람 사이에서 일어난 일, 관계의 변화, 정서적 흐름..."></textarea>
             </div>
         </div>
 
         <div class="step-header">STEP 03</div>
         <div class="step-container">
-            <div class="step-title">▼ 장르 선택</div>
+            <div class="step-title">▼ 장르 선택 (1개)</div>
             <div class="genre-grid" id="genreGrid"></div>
         </div>
 
